@@ -413,7 +413,7 @@ diseno: {
    fuenteTitulo:9,
    fuenteTexto: 2,
    tamañoTitulo: "2.5rem", //de las secciones
-   tamañoTexto: "1.2rem",  //de las secciones
+   tamañoTexto: "1.5rem",  //de las secciones
    espacioTituloATexto: 30,
    espacioTextoABoton: 40,
 },
@@ -465,7 +465,7 @@ regalos: {
 ornamentos: {
     secciones: {
         mostrar: true, // Cambiar a false para ocultar los ornamentos
-        tipo: "floral", // floral, estrellas, ondas
+        tipo: "rosa", // floral, estrellas, ondas, rosa, ramas, mariposas
         color: "", // Dejar vacio para usar el color del boton de la paleta
         opacidad: 0.20,
         tamaño: 240,
@@ -792,6 +792,40 @@ createSec('cierre', 'heart', CONFIG.cierre.t, `<p>${CONFIG.cierre.s}</p><div sty
 const ORNAMENTOS = {
     floral: `<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M60 108C46 84 38 64 60 12c22 52 14 72 0 96Z"/><path d="M60 72C42 62 28 48 18 26c24 5 42 20 42 46Z"/><path d="M60 72c18-10 32-24 42-46-24 5-42 20-42 46Z"/><path d="M60 98C44 92 30 83 16 66c22-2 39 7 44 32Z"/><path d="M60 98c16-6 30-15 44-32-22-2-39 7-44 32Z"/></svg>`,
     estrellas: `<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M60 12l7 25 25 7-25 7-7 25-7-25-25-7 25-7 7-25Z"/><path d="M25 74l4 12 12 4-12 4-4 12-4-12-12-4 12-4 4-12Z"/><path d="M94 72l3 10 10 3-10 3-3 10-3-10-10-3 10-3 3-10Z"/></svg>`,
+  mariposas: `
+<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M60 60
+             C40 30,20 30,25 55
+             C30 75,50 70,60 60Z"/>
+    <path d="M60 60
+             C80 30,100 30,95 55
+             C90 75,70 70,60 60Z"/>
+    <path d="M60 60
+             C40 90,20 90,25 65
+             C30 50,50 55,60 60Z"/>
+    <path d="M60 60
+             C80 90,100 90,95 65
+             C90 50,70 55,60 60Z"/>
+    <line x1="60" y1="40" x2="60" y2="80"/>
+</svg>`
+    rosa: `
+<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5">
+  <circle cx="60" cy="60" r="12"/>
+  <path d="M60 20 Q75 40 60 60"/>
+  <path d="M100 60 Q80 75 60 60"/>
+  <path d="M60 100 Q45 80 60 60"/>
+  <path d="M20 60 Q40 45 60 60"/>
+</svg>`
+  ramas: `
+<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.4">
+  <path d="M20 100 C40 70 60 50 100 20"/>
+  <path d="M35 82 Q45 70 55 75"/>
+  <path d="M50 65 Q60 55 70 60"/>
+  <path d="M65 48 Q75 38 85 43"/>
+  <path d="M30 90 Q20 80 15 70"/>
+  <path d="M45 73 Q35 63 30 53"/>
+  <path d="M60 56 Q50 46 45 36"/>
+</svg>`
     ondas: `<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 36c20-20 40 20 60 0s30-8 40 0"/><path d="M10 60c20-20 40 20 60 0s30-8 40 0"/><path d="M10 84c20-20 40 20 60 0s30-8 40 0"/></svg>`
 };
 
